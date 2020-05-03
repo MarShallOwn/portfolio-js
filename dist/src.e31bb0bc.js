@@ -32899,12 +32899,14 @@ var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"../node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
 
-},{}],"assets/project1.png":[function(require,module,exports) {
-module.exports = "/project1.0e13da1c.png";
-},{}],"assets/project2.png":[function(require,module,exports) {
-module.exports = "/project2.d48872d8.png";
-},{}],"assets/project3.png":[function(require,module,exports) {
-module.exports = "/project3.592b562e.png";
+},{}],"assets/quran-record.png":[function(require,module,exports) {
+module.exports = "/quran-record.64b3de95.png";
+},{}],"assets/tic-tac-toe.png":[function(require,module,exports) {
+module.exports = "/tic-tac-toe.8ea04e4e.png";
+},{}],"assets/hotel-reservation.png":[function(require,module,exports) {
+module.exports = "/hotel-reservation.ad7a2374.png";
+},{}],"assets/discovery-nursery.png":[function(require,module,exports) {
+module.exports = "/discovery-nursery.8a012a71.png";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -32913,36 +32915,44 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _project = _interopRequireDefault(require("../assets/project1.png"));
+var _quranRecord = _interopRequireDefault(require("../assets/quran-record.png"));
 
-var _project2 = _interopRequireDefault(require("../assets/project2.png"));
+var _ticTacToe = _interopRequireDefault(require("../assets/tic-tac-toe.png"));
 
-var _project3 = _interopRequireDefault(require("../assets/project3.png"));
+var _hotelReservation = _interopRequireDefault(require("../assets/hotel-reservation.png"));
+
+var _discoveryNursery = _interopRequireDefault(require("../assets/discovery-nursery.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PROJECTS = [{
   id: 1,
-  title: 'Example React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://github.come/15DKatz/example',
-  image: _project.default
+  title: 'Quran Record App',
+  description: 'App made using flask python and cloudinary api for cloud storage to store the records',
+  link: 'http://marshallown.pythonanywhere.com/',
+  image: _quranRecord.default
 }, {
   id: 2,
-  title: 'My API',
-  description: 'A REST API that I built from scratch with GET and POT requests!',
-  link: 'https://github.com/15DKatz/example',
-  image: _project2.default
+  title: 'Discovery Nursery',
+  description: 'Website special needs children nursery which lets parents keep track of their child\'s report',
+  link: 'https://github.com/MarShallOwn/Hotel-Reservation',
+  image: _discoveryNursery.default
 }, {
   id: 3,
-  title: 'Operating Systems Final Project',
-  description: 'My unique final project for my university Operating System course',
-  link: 'https://github.com/15Dkatz/example',
-  image: _project3.default
+  title: 'Hotel Reservation',
+  description: 'Website for hotel reservation using flask python',
+  link: 'https://github.com/MarShallOwn/Hotel-Reservatione',
+  image: _hotelReservation.default
+}, {
+  id: 4,
+  title: 'Tic-Tac-Toe',
+  description: 'tic-tac-toe using React-JS!',
+  link: 'https://github.com/MarShallOwn/tic-tac-toe',
+  image: _ticTacToe.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/quran-record.png":"assets/quran-record.png","../assets/tic-tac-toe.png":"assets/tic-tac-toe.png","../assets/hotel-reservation.png":"assets/hotel-reservation.png","../assets/discovery-nursery.png":"assets/discovery-nursery.png"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32963,10 +32973,11 @@ var Project = function Project(props) {
       description = _props$project.description,
       link = _props$project.link;
   return /*#__PURE__*/_react.default.createElement("div", {
+    className: "row",
     style: {
       display: 'inline-block',
-      margin: 10,
-      width: 300
+      margin: "10px 15px",
+      width: 400
     }
   }, /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("img", {
     src: image,
@@ -32980,12 +32991,17 @@ var Project = function Project(props) {
 };
 
 var Projects = function Projects() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Projects"), /*#__PURE__*/_react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Projects"), /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      margin: "25px 0 35px 0"
+    },
+    className: "col-md-12"
+  }, _projects.default.map(function (PROJECT) {
     return /*#__PURE__*/_react.default.createElement(Project, {
       key: PROJECT.id,
       project: PROJECT
     });
-  })));
+  }), /*#__PURE__*/_react.default.createElement("hr", null)));
 };
 
 var _default = Projects;
@@ -34350,7 +34366,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54477" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64080" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

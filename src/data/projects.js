@@ -1,29 +1,37 @@
-import project1 from '../assets/project1.png';
-import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
+import quran_record from '../assets/quran-record.png';
+import tic_tac_toe from '../assets/tic-tac-toe.png';
+import hotel_reservation from '../assets/hotel-reservation.png';
+import discovery_nursery from '../assets/discovery-nursery.png';
 
 const PROJECTS = [
     {
         id: 1,
-        title: 'Example React Application',
-        description: 'A React App that I built, involving JS and core web dev concepts!',
-        link: 'https://github.come/15DKatz/example',
-        image: project1
+        title: 'Quran Record App',
+        description: 'App made using flask python and cloudinary api for cloud storage to store the records',
+        link: 'http://marshallown.pythonanywhere.com/',
+        image: quran_record
     }
     ,
     {
         id: 2,
-        title: 'My API',
-        description: 'A REST API that I built from scratch with GET and POT requests!',
-        link: 'https://github.com/15DKatz/example',
-        image : project2
+        title: 'Discovery Nursery',
+        description : 'Website special needs children nursery which lets parents keep track of their child\'s report',
+        link: 'https://github.com/MarShallOwn/Hotel-Reservation',
+        image: discovery_nursery
     },
     {
         id: 3,
-        title: 'Operating Systems Final Project',
-        description : 'My unique final project for my university Operating System course',
-        link: 'https://github.com/15Dkatz/example',
-        image: project3
+        title: 'Hotel Reservation',
+        description : 'Website for hotel reservation using flask python',
+        link: 'https://github.com/MarShallOwn/Hotel-Reservatione',
+        image: hotel_reservation
+    },
+    {
+        id: 4,
+        title: 'Tic-Tac-Toe',
+        description: 'tic-tac-toe using React-JS!',
+        link: 'https://github.com/MarShallOwn/tic-tac-toe',
+        image : tic_tac_toe
     }
 ];
 
