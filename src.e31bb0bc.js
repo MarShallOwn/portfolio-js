@@ -32933,10 +32933,10 @@ var PROJECTS = [{
   image: _quranRecord.default
 }, {
   id: 2,
-  title: 'Tic-Tac-Toe',
-  description: 'tic-tac-toe using React-JS!',
-  link: 'https://github.com/MarShallOwn/tic-tac-toe',
-  image: _ticTacToe.default
+  title: 'Discovery Nursery',
+  description: 'Website special needs children nursery which lets parents keep track of their child\'s report',
+  link: 'https://github.com/MarShallOwn/Hotel-Reservation',
+  image: _discoveryNursery.default
 }, {
   id: 3,
   title: 'Hotel Reservation',
@@ -32945,10 +32945,10 @@ var PROJECTS = [{
   image: _hotelReservation.default
 }, {
   id: 4,
-  title: 'Discovery Nursery',
-  description: 'Website special needs children nursery which lets parents keep track of their child\'s report',
-  link: 'https://github.com/MarShallOwn/Hotel-Reservation',
-  image: _discoveryNursery.default
+  title: 'Tic-Tac-Toe',
+  description: 'tic-tac-toe using React-JS!',
+  link: 'https://github.com/MarShallOwn/tic-tac-toe',
+  image: _ticTacToe.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
@@ -34366,7 +34366,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63014" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64080" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
