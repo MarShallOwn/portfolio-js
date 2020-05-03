@@ -14,10 +14,10 @@ import CountDown from './components/CountDown';
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact path='/Portfolio-JS' render={ () => <Header><App/></Header> } /> 
-            <Route path='/Portfolio-JS/jokes' render={ () => <Header><Jokes/></Header> } />
-            <Route path='/Portfolio-JS/music-master' render={ () => <Header><MusicMaster/></Header> } />
-            <Route path='/Portfolio-JS/CountDown' render={() => <Header><CountDown /></Header>} />
+            <Route exact path='/' render={ () => <Header><App/></Header> } /> 
+            <Route path='/jokes' render={ () => <Header><Jokes/></Header> } />
+            <Route path='/music-master' render={ () => <Header><MusicMaster/></Header> } />
+            <Route path='/CountDown' render={() => <Header><CountDown /></Header>} />
         </Switch>
     </Router>,
     document.getElementById('root'));

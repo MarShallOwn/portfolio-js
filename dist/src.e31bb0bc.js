@@ -33960,19 +33960,19 @@ var Header = function Header(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/Portfolio-JS"
+    to: "/"
   }, "Home")), /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/Portfolio-JS/Jokes"
+    to: "/Jokes"
   }, "Jokes")), /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/Portfolio-JS/music-master"
+    to: "/music-master"
   }, "Music Master")), /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/Portfolio-JS/CountDown"
+    to: "/CountDown"
   }, "CountDown"))), children);
 };
 
@@ -34233,22 +34233,22 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
   history: (0, _history.createBrowserHistory)()
 }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   exact: true,
-  path: "/Portfolio-JS",
+  path: "/",
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_App.default, null));
   }
 }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-  path: "/Portfolio-JS/jokes",
+  path: "/jokes",
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_Jokes.default, null));
   }
 }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-  path: "/Portfolio-JS/music-master",
+  path: "/music-master",
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_musicMaster.default, null));
   }
 }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-  path: "/Portfolio-JS/CountDown",
+  path: "/CountDown",
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_CountDown.default, null));
   }
@@ -34350,7 +34350,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56305" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62771" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
