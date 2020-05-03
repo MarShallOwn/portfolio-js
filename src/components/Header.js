@@ -13,9 +13,9 @@ const Header = ({ children }) =>{
         <div>
             <div>
             <h3 style={style}><Link to='/portfolio-js'>Home</Link></h3>
-            <h3 style={style}><Link to='/Jokes'>Jokes</Link></h3>
-            <h3 style={style}><Link to='/music-master'>Music Master</Link></h3>
-            <h3 style={style}><Link to='/CountDown'>CountDown</Link></h3>
+            <h3 style={style}><Link to='/portfolio-js/Jokes'>Jokes</Link></h3>
+            <h3 style={style}><Link to='/portfolio-js/music-master'>Music Master</Link></h3>
+            <h3 style={style}><Link to='/portfolio-js/CountDown'>CountDown</Link></h3>
         </div>
         {children}
         </div>

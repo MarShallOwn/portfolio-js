@@ -15,9 +15,9 @@ ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
             <Route exact path='/portfolio-js' render={ () => <Header><App/></Header> } /> 
-            <Route path='/jokes' render={ () => <Header><Jokes/></Header> } />
-            <Route path='/music-master' render={ () => <Header><MusicMaster/></Header> } />
-            <Route path='/CountDown' render={() => <Header><CountDown /></Header>} />
+            <Route path='/portfolio-js/jokes' render={ () => <Header><Jokes/></Header> } />
+            <Route path='/portfolio-js/music-master' render={ () => <Header><MusicMaster/></Header> } />
+            <Route path='/portfolio-js/CountDown' render={() => <Header><CountDown /></Header>} />
         </Switch>
     </Router>,
     document.getElementById('root'));
