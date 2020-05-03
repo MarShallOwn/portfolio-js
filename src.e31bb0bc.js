@@ -33960,7 +33960,7 @@ var Header = function Header(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
+    to: "/portfolio-js"
   }, "Home")), /*#__PURE__*/_react.default.createElement("h3", {
     style: style
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -34233,7 +34233,7 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
   history: (0, _history.createBrowserHistory)()
 }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   exact: true,
-  path: "/",
+  path: "/portfolio-js",
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_App.default, null));
   }
@@ -34350,7 +34350,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62771" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63834" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
