@@ -3,7 +3,7 @@ import Clock from './Clock';
 
 class CountDown extends Component{
     
-    state = {deadline: 'February 28, 2020',newDeadline:''};
+    state = {deadline: 'February 28, 2021',newDeadline:''};
 
     UpdateDeadLine = event => {
         this.setState({newDeadline: event.target.value});
