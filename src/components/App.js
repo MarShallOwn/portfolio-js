@@ -30,7 +30,6 @@ toggleDisplayBio = () => {
                 <img style={{transform: "rotate(-1deg)"}} src={Profile} className="Image" />
                 <h1>Hello</h1>
                 <p>My Name Is Marwan.</p>
-                { this.state.displayBio ? <Title /> : null }
                 <Title />
                 <p>I'm always looking forward to working on meaningfull projects.</p>
                 {bio}
@@ -44,30 +43,3 @@ toggleDisplayBio = () => {
 }
 
 export default App;
-
-
-
-
-/*
-    constructor(){
-        super();
-        this.state ={ displayBio : false };
-
-        console.log('Component this' , this);
-
-       // this.readMore = this.readMore.bind(this);
-       // this.showLess = this.showLess.bind(this);
-        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    }
-*/
-
-/*
-readMore(){
-    console.log('readMore this', this);
-    this.setState( { displayBio:true } );    
-}
-
-showLess(){
-    this.setState( { displayBio : false } );
-}
-*/
