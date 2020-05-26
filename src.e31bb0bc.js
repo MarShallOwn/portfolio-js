@@ -33168,15 +33168,14 @@ var Title = /*#__PURE__*/function (_Component) {
         _this.setState({
           titleIndex: titleIndex,
           fadeIn: true
-        }); // equivalent to titleIndex: titleIndex
-
+        });
 
         _this.timeout = setTimeout(function () {
           _this.setState({
             fadeIn: false
           });
         }, 2000);
-      }, 4000); //console.log('this.titleInterval',this.titleInterval);
+      }, 4000);
     });
 
     return _this;
@@ -33187,7 +33186,6 @@ var Title = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      //console.log('Title component has mounted');
       this.timeout = setTimeout(function () {
         _this2.setState({
           fadeIn: false
@@ -33198,7 +33196,6 @@ var Title = /*#__PURE__*/function (_Component) {
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      //console.log('Titlte component will unmount!');
       clearInterval(this.titleInterval);
       clearTimeout(this.timeout);
     }
@@ -33313,7 +33310,7 @@ var App = /*#__PURE__*/function (_Component) {
         },
         src: _Profile.default,
         className: "Image"
-      }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello"), /*#__PURE__*/_react.default.createElement("p", null, "My Name Is Marwan."), this.state.displayBio ? /*#__PURE__*/_react.default.createElement(_Title.default, null) : null, /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I'm always looking forward to working on meaningfull projects."), bio, /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
+      }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello"), /*#__PURE__*/_react.default.createElement("p", null, "My Name Is Marwan."), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I'm always looking forward to working on meaningfull projects."), bio, /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
     }
   }]);
 
@@ -33321,30 +33318,6 @@ var App = /*#__PURE__*/function (_Component) {
 }(_react.Component);
 
 var _default = App;
-/*
-    constructor(){
-        super();
-        this.state ={ displayBio : false };
-
-        console.log('Component this' , this);
-
-       // this.readMore = this.readMore.bind(this);
-       // this.showLess = this.showLess.bind(this);
-        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    }
-*/
-
-/*
-readMore(){
-    console.log('readMore this', this);
-    this.setState( { displayBio:true } );    
-}
-
-showLess(){
-    this.setState( { displayBio : false } );
-}
-*/
-
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./Projects":"components/Projects.js","./SocialProfiles":"components/SocialProfiles.js","../assets/Profile(2).jpeg":"assets/Profile(2).jpeg","./Title":"components/Title.js"}],"components/Jokes.js":[function(require,module,exports) {
 "use strict";
@@ -33438,8 +33411,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
       fetch('https://official-joke-api.appspot.com/random_joke').then(function (response) {
         return response.json();
-      }) // equivalent to .then( response => { return ( response.json() ) });
-      .then(function (json) {
+      }).then(function (json) {
         return _this2.setState({
           joke: json
         });
@@ -34244,7 +34216,6 @@ var _CountDown = _interopRequireDefault(require("./components/CountDown"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// const history = createBrowserHistory(); we dont need the object because the history is only used once
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouterDom.Router, {
   history: (0, _history.createBrowserHistory)()
 }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
@@ -34268,76 +34239,7 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_CountDown.default, null));
   }
-}))), document.getElementById('root')); // (exact) word by itself is equal to (exact = true)
-// because in jsx when the property value is equal to true you dont need to write it and it will be understood 
-// this is one way of doing the render
-
-
-{}
-/* <Route exact path='/' render={ () => <Header Component={App} /> } /> 
-<Route path='/Jokes' render={ () => <Header Component={Jokes} /> } /> */
-
-/*
-new Promise( (resolve, reject) =>{
-    return reject(new Error('No Bears'));
-
-    setTimeout(() => { 
-        resolve('Bears, Beets, Battlestar Galactica');
-      }, 2000);
-})
-.then( quotes => {
-    console.log(quotes);
-})
-.catch(error => console.log('error' , error));
-
-
-
-new Promise(resolve =>{
-    setTimeout(() => {
-        console.log('Bears');  
-        resolve();
-      }, 2000);
-})
-.then(() => {
-    console.log('Beets');
-console.log('Battlestar Galactica');
-})
-*/
-
-/*
-class Animal{
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
-
-    speak(){
-        console.log('I am', this.name,'and I am', this.age,'years old');
-    }
-}
-
-const animal1 = new Animal('simba',3);
-animal1.speak();
-
-console.log(animal1);
-
-class Lion extends Animal{
-    constructor(name,age,furColor,speed){
-        super(name,age);
-        this.furColor = furColor;
-        this.speed = speed;
-    }
-
-    roar(){
-        console.log("ROOOR! I have", this.furColor,'fur, and i can run',this.speed,'miles an hour!');
-    }
-}
-
-const lion1 = new Lion("musfa",20,'golden',25);
-
-lion1.speak();
-lion1.roar();
-console.log(lion1);*/
+}))), document.getElementById('root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history":"../node_modules/history/esm/history.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./projects/music-master":"projects/music-master/index.js","./index.css":"index.css","./components/Header":"components/Header.js","./components/CountDown":"components/CountDown.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -34366,7 +34268,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64080" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58045" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
