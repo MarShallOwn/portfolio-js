@@ -16,14 +16,14 @@ const PROJECTS = [
         id: 2,
         title: 'Discovery Nursery',
         description : 'Website special needs children nursery which lets parents keep track of their child\'s report',
-        link: 'https://github.com/MarShallOwn/Hotel-Reservation',
+        link: 'https://github.com/MarShallOwn/Discovery_Python',
         image: discovery_nursery
     },
     {
         id: 3,
         title: 'Hotel Reservation',
         description : 'Website for hotel reservation using flask python',
-        link: 'https://github.com/MarShallOwn/Hotel-Reservatione',
+        link: 'https://github.com/MarShallOwn/Hotel-Reservation',
         image: hotel_reservation
     },
     {
