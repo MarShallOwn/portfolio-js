@@ -32907,6 +32907,8 @@ module.exports = "/tic-tac-toe.8ea04e4e.png";
 module.exports = "/hotel-reservation.ad7a2374.png";
 },{}],"assets/discovery-nursery.png":[function(require,module,exports) {
 module.exports = "/discovery-nursery.8a012a71.png";
+},{}],"assets/weather.jpg":[function(require,module,exports) {
+module.exports = "/weather.e3428d82.jpg";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -32923,6 +32925,8 @@ var _hotelReservation = _interopRequireDefault(require("../assets/hotel-reservat
 
 var _discoveryNursery = _interopRequireDefault(require("../assets/discovery-nursery.png"));
 
+var _weather = _interopRequireDefault(require("../assets/weather.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PROJECTS = [{
@@ -32935,13 +32939,13 @@ var PROJECTS = [{
   id: 2,
   title: 'Discovery Nursery',
   description: 'Website special needs children nursery which lets parents keep track of their child\'s report',
-  link: 'https://github.com/MarShallOwn/Hotel-Reservation',
+  link: 'https://github.com/MarShallOwn/Discovery_Python',
   image: _discoveryNursery.default
 }, {
   id: 3,
   title: 'Hotel Reservation',
   description: 'Website for hotel reservation using flask python',
-  link: 'https://github.com/MarShallOwn/Hotel-Reservatione',
+  link: 'https://github.com/MarShallOwn/Hotel-Reservation',
   image: _hotelReservation.default
 }, {
   id: 4,
@@ -32949,10 +32953,16 @@ var PROJECTS = [{
   description: 'tic-tac-toe using React-JS!',
   link: 'https://github.com/MarShallOwn/tic-tac-toe',
   image: _ticTacToe.default
+}, {
+  id: 5,
+  title: 'Weather App',
+  description: 'weather application using APIs in JavaScript',
+  link: 'https://github.com/MarShallOwn/weather-app',
+  image: _weather.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/quran-record.png":"assets/quran-record.png","../assets/tic-tac-toe.png":"assets/tic-tac-toe.png","../assets/hotel-reservation.png":"assets/hotel-reservation.png","../assets/discovery-nursery.png":"assets/discovery-nursery.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/quran-record.png":"assets/quran-record.png","../assets/tic-tac-toe.png":"assets/tic-tac-toe.png","../assets/hotel-reservation.png":"assets/hotel-reservation.png","../assets/discovery-nursery.png":"assets/discovery-nursery.png","../assets/weather.jpg":"assets/weather.jpg"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33014,6 +33024,8 @@ module.exports = "/github_icon.2b0f71f9.png";
 module.exports = "/facebook_icon.f1a269ff.png";
 },{}],"assets/twitter_icon.png":[function(require,module,exports) {
 module.exports = "/twitter_icon.38592594.png";
+},{}],"assets/linkedin_icon.png":[function(require,module,exports) {
+module.exports = "/linkedin_icon.32d4c8f5.png";
 },{}],"data/socialProfiles.js":[function(require,module,exports) {
 "use strict";
 
@@ -33030,6 +33042,8 @@ var _facebook_icon = _interopRequireDefault(require("../assets/facebook_icon.png
 
 var _twitter_icon = _interopRequireDefault(require("../assets/twitter_icon.png"));
 
+var _linkedin_icon = _interopRequireDefault(require("../assets/linkedin_icon.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SOCIAL_PROFILES = [{
@@ -33042,16 +33056,12 @@ var SOCIAL_PROFILES = [{
   image: _github_icon.default
 }, {
   id: 3,
-  link: 'https://www.facebook.com/MarShallOwn',
-  image: _facebook_icon.default
-}, {
-  id: 4,
-  link: 'https://twitter.com/MarwanSamih15',
-  image: _twitter_icon.default
+  link: 'https://www.linkedin.com/in/marwan-samih-86614b188/',
+  image: _linkedin_icon.default
 }];
 var _default = SOCIAL_PROFILES;
 exports.default = _default;
-},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/facebook_icon.png":"assets/facebook_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
+},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/facebook_icon.png":"assets/facebook_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34268,7 +34278,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58045" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51388" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
