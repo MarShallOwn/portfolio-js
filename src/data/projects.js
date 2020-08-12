@@ -2,6 +2,7 @@ import quran_record from '../assets/quran-record.png';
 import tic_tac_toe from '../assets/tic-tac-toe.png';
 import hotel_reservation from '../assets/hotel-reservation.png';
 import discovery_nursery from '../assets/discovery-nursery.png';
+import weather from '../assets/weather.jpg';
 
 const PROJECTS = [
     {
@@ -32,6 +33,13 @@ const PROJECTS = [
         description: 'tic-tac-toe using React-JS!',
         link: 'https://github.com/MarShallOwn/tic-tac-toe',
         image : tic_tac_toe
+    },
+    {
+        id: 5,
+        title: 'Weather App',
+        description: 'weather application using APIs in JavaScript',
+        link: 'https://github.com/MarShallOwn/weather-app',
+        image : weather
     }
 ];
 

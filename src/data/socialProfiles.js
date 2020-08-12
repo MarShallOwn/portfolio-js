@@ -2,6 +2,7 @@ import emailIcon from "../assets/email_icon.png";
 import githubIcon from "../assets/github_icon.png";
 import facebookIcon from "../assets/facebook_icon.png";
 import twitterIcon from "../assets/twitter_icon.png";
+import linkedinIcon from "../assets/linkedin_icon.png";
 
 const SOCIAL_PROFILES = [
     {
@@ -16,13 +17,8 @@ const SOCIAL_PROFILES = [
     },
     {
         id: 3,
-        link: 'https://www.facebook.com/MarShallOwn',
-        image: facebookIcon
-    },
-    {
-        id: 4,
-        link: 'https://twitter.com/MarwanSamih15',
-        image: twitterIcon
+        link: 'https://www.linkedin.com/in/marwan-samih-86614b188/',
+        image: linkedinIcon
     }
 ];
 
